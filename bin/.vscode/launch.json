@@ -1,0 +1,16 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run BYOW",
+      "type": "java",
+      "request": "launch",
+      "mainClass": "byow.Core.Launcher",
+      "cwd": "${workspaceFolder}",
+      "classPaths": [
+        "${workspaceFolder}/bin"
+      ],
+      "preLaunchTask": "Build BYOW"
+    }
+  ]
+}
