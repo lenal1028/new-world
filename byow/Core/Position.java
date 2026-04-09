@@ -1,4 +1,4 @@
-package byow.lab12;
+package byow.Core;
 
 import java.io.Serializable;
 
@@ -35,7 +35,7 @@ public class Position implements Serializable {
 
     @Override
     public String toString() {
-        return "(" +this.x + ", " +this.y + ")";
+        return "(" + this.x + ", " + this.y + ")";
     }
 
     @Override

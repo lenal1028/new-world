@@ -4,7 +4,6 @@ import byow.InputDemo.StringInputDevice;
 import byow.TileEngine.TERenderer;
 import byow.TileEngine.TETile;
 import byow.TileEngine.Tileset;
-import byow.lab12.Position;
 import edu.princeton.cs.introcs.StdDraw;
 
 import java.awt.*;
@@ -59,9 +58,8 @@ public class Engine implements Serializable {
         StdDraw.setPenColor(StdDraw.WHITE);
         StdDraw.setFont(new Font("Arial", Font.BOLD, 40));
         StdDraw.text(.5, .7, "CS61B: THE GAME");
-        StdDraw.text(.5, .4, "New Game (N)");
-        StdDraw.text(.5, .3, "Load Game (L)");
-        StdDraw.text(.5, .2, "Quit (Q)");
+        StdDraw.text(.5, .38, "New Game (N)");
+        StdDraw.text(.5, .26, "Quit (Q)");
         StdDraw.show();
         while (true) {
             if (StdDraw.hasNextKeyTyped()) {
@@ -74,28 +72,8 @@ public class Engine implements Serializable {
     private void menuInput(Character key) {
         if (key == 'n') {
             newGame();
-        } else if (key == 'l') {
-            /** load movement set and last world from the last saved */
-
-            TETile[][] loadW = loadWorld();
-            if (loadW == null) {
-                StdDraw.clear(StdDraw.BLACK);
-                StdDraw.setPenColor(StdDraw.WHITE);
-                StdDraw.setFont(new Font("Arial", Font.BOLD, 40));
-                StdDraw.text(.5, .7, "No file to load");
-                StdDraw.pause(2000);
-                mainMenu();
-            } else {
-                movements = loadMovements();
-                finalWorldFrame = loadW;
-                name = loadName();
-                ter.initialize(WIDTH, HEIGHT);
-                ter.renderFrame(finalWorldFrame);
-                rePosition(finalWorldFrame);
-                replay(false);
-                startWorld = getCopyWorld(finalWorldFrame);
-                play();
-            }
+        } else if (key == 'q') {
+            System.exit(0);
         }
     }
 

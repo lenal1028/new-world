@@ -1,7 +1,5 @@
 package byow.Core;
 
-import byow.lab12.Position;
-
 public class Room {
     Position upL;
     Position upR;

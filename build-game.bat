@@ -16,9 +16,7 @@ if not exist "bin" mkdir bin
     byow\TileEngine\TERenderer.java ^
     byow\TileEngine\TETile.java ^
     byow\TileEngine\Tileset.java ^
-    byow\lab12\Position.java ^
-    byow\lab12\Hexagon.java ^
-    byow\lab12\Tessellation.java ^
+    byow\Core\Position.java ^
     byow\Core\RandomUtils.java ^
     byow\Core\Room.java ^
     byow\Core\World.java ^
