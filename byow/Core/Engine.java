@@ -107,7 +107,6 @@ public class Engine implements Serializable {
     private void newGame() {
         score = 0;
         floorsCleared = 0;
-        gameStartTimeMs = System.currentTimeMillis();
         String seedstring = "";
         long seed;
         drawSeedPrompt(seedstring);
@@ -131,6 +130,7 @@ public class Engine implements Serializable {
         }
         newWorld = new World(seed);
         avatar();
+        gameStartTimeMs = System.currentTimeMillis();
         loadWorldState(newWorld, true);
         play();
     }
@@ -151,7 +151,7 @@ public class Engine implements Serializable {
         StdDraw.clear(StdDraw.BLACK);
         StdDraw.setPenColor(StdDraw.WHITE);
         StdDraw.setFont(new Font("Arial", Font.BOLD, 20));
-        StdDraw.text(.5, .55, "Enter seed followed by 's'");
+        StdDraw.text(.5, .55, "Enter seed followed by \"S\"");
         StdDraw.text(.5, .4, seedstring);
         StdDraw.show();
     }

@@ -39,7 +39,7 @@ You explore randomly generated floors, collect pellet dots for score, avoid a ch
 ## How To Play
 
 1. Start a new game.
-2. Enter a numeric seed, then press `s`.
+2. Enter a numeric seed, then press `S`.
 3. Enter an avatar name, then press `1` or `Enter`.
 4. Move around the map collecting `.` pellets.
 5. Avoid the enemy.
