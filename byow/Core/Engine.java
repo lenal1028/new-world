@@ -786,7 +786,7 @@ public class Engine implements Serializable {
             } else if (finalWorldFrame[x][y].description().equals("wall")) {
                 StdDraw.text(30, HEIGHT - 1, "wall");
             } else if (finalWorldFrame[x][y].description().equals("floor")) {
-                StdDraw.text(30, HEIGHT - 1, "floor");
+                StdDraw.text(30, HEIGHT - 1, "pellet");
             } else if (finalWorldFrame[x][y].description().equals("eaten floor")) {
                 StdDraw.text(30, HEIGHT - 1, "floor");
             } else if (finalWorldFrame[x][y].description().equals("you")) {
