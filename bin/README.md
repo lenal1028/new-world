@@ -30,8 +30,6 @@ You explore randomly generated floors, collect pellet dots for score, avoid a ch
 - Avatar start:
   - press `"1"`
   - or press `"Enter"`
-- Save and quit in game:
-  - `:Q`
 - Game over screen:
   - `P`: Play again
   - `Q`: Quit
