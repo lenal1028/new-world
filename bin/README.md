@@ -77,18 +77,12 @@ From the project folder:
 ## Requirements
 
 - Windows
-- Java 21
+- Java 21 or newer
 - VS Code is recommended for the included task setup
 
-The batch files currently expect Java here:
+The batch files use `JAVA_HOME` if it is set. Otherwise, they look for `java.exe` and `javac.exe` on your `PATH`.
 
-`C:\Users\Lena\AppData\Local\Programs\Eclipse Adoptium\jdk-21.0.10.7-hotspot\bin`
-
-If your Java installation is somewhere else, update:
-
-- `build-game.bat`
-- `run-game.bat`
-- `run-smoke-test.bat`
+If the scripts cannot find Java, install a JDK and either set `JAVA_HOME` to the JDK folder or add the JDK `bin` folder to `PATH`.
 
 ## Project Structure
 
